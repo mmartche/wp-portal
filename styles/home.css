@@ -1,0 +1,1089 @@
+body, a,ul,ol,li, h1,h2,h3,h4,h5,p,div,span,label {
+	font-family: verdana !important;
+}
+ul,ol,li, h1,h2,h3,h4,h5,p {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a img {
+	border: 1px solid transparent;
+}
+a img:hover{
+	/*border: 1px solid #cb2026;*/
+}
+#uolBar {
+	height: 35px;
+}
+header {
+	width: 990px;
+	margin: auto;
+}
+.logo {
+	background: url("../images/logo-header.png") no-repeat;
+	text-indent: -999em;
+	float: left;
+	margin: 10px 0 0 20px;
+	width: 200px;
+	height: 80px;
+}
+.logo a {
+	display: block;
+	width: 180px;
+	height: 75px;
+}
+.menu {
+	margin-bottom: 10px ;
+	z-index: 98;
+	/* background: url("../images/car-menu.jpg") no-repeat; */
+	background: #CB2229; /* Old browsers */
+	background: -moz-linear-gradient(top,  #CB2229 1%, #A91015 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#CB2229), color-stop(100%,#A91015)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #CB2229 1%,#A91015 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #CB2229 1%,#A91015 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #CB2229 1%,#A91015 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #CB2229 1%,#A91015 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CB2229', endColorstr='#A91015',GradientType=0 ); /* IE6-9 */
+	height: 40px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.menu a {
+	color: #fff;
+	font-size: 18px;
+}
+.menu .nav>li>a {
+	padding: 10px 19px;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.6);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+.menu .menuLastItem a:hover {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.menu .open a {
+	color: #000;
+	font-size: 13px;
+}
+.menu .nav .caret {
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+}
+.menu .nav .dropdown:hover .caret {
+	border-top-color: #CB2229;
+	border-bottom-color: #CB2229;
+}
+.menu .nav .open .caret {
+	border-top-color: #000;
+	border-bottom-color: #000;
+}
+.menu.affix, .menu.affix-top {
+	top: 0;
+	background-color: #fff;
+	width: 990px;
+	z-index: 99;
+}
+.menu.affix-top .active > a {
+	background-color: transparent;
+	margin: 1px;
+}
+.menu .nav>li>a:hover, .nav>li>a:focus {
+	color: #CB2229;
+	font-weight: bold;
+}
+.menu .nav-pills>li.active>a, .nav-pills>li.active>a:hover {
+	background: transparent;
+	width: 100px;
+	text-align: center;
+}
+.menu .nav-pills>li>a {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+.menu .dropdown-menu {
+	margin-top: 0;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	background-color: #9d2121;
+}
+.dropdown-menu li a {
+	/*margin: 5px 20px !important;
+	padding: 0;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+	font-size: 16px;*/
+	margin: 0px 0px 0 !important;
+	border-bottom: 1px solid #7a1a1a;
+	font-size: 16px;
+	padding: 8px 0 8px 25px !important;
+}
+/*.dropdown-menu li a:before {
+	content: "> ";
+}*/
+.menu.affix .active > a {
+	width: 80px;
+}
+.menu.affix .nav li.menuHome:first-child > a {
+	background: url("http://noticias.carsale.uol.com.br/images/sprite.png") no-repeat transparent 0px -46px;
+	text-indent: -99em;
+	width: 100px;
+	height: 38px;
+	background-color: #fff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin:1px;
+}
+.subMenuLi {
+	float: none !important;
+	margin-top: 39px;
+}
+.subMenuLi .subMenu {
+	background-color: darkred;
+	margin: 0 20px;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	border-radius: 15px;
+}
+.subMenuLi #submenuEditorial{
+	left: 473px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.subMenuLi #submenuClassificados{
+	left: 81px;
+	width: 190px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#submenuClassificados li:last-child a, #submenuEditorial li:last-child a {
+	border-bottom: 0;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+/*.subMenuLi .subMenu {
+	width: 950px;
+	background-color: darkred;
+	margin: 0 20px;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	border-radius: 15px;
+}
+*/
+.subMenu a {
+	margin: 0 !important;
+	color: #fff !important;
+}
+.subMenuLi .subMenu li {
+	/*float: left;*/
+	overflow: hidden;
+}
+.subMenu .arrow-submenu {
+	background: url("http://noticias.carsale.uol.com.br/images/sprite.png") no-repeat transparent -341px -128px;
+	height: 19px;
+	width: 30px;
+	margin-top: 10px;
+	position: absolute;
+}
+.logoBanner {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.logoBanner .bannerHome {
+	float: right;
+	overflow: hidden;
+	position: relative;
+}
+.bannerHome .publicidade {
+	color: #ccc;
+	transform: rotate(-90deg);
+	-ms-transform:rotate(-90deg); /* IE 9 */
+	-moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+	-o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+	-webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+	left: -20px;
+	top: 45px;
+	font-size: 12px;
+	position: absolute;
+}
+.bannerHomeImg {
+	background-color: #ccc;
+	margin-left: 20px;
+}
+.banner300 {
+	margin-bottom: 10px;
+}
+.socialBar {
+	height: 30px;
+	margin-bottom: 10px;
+	/*background-image: url("../images/car-social.jpg"); */
+	background-color: #eee;
+	padding: 4px;
+}
+.socialBar div {
+	float: left;
+	margin-left: 10px;
+}
+.btnGoogle {
+	margin-top: 3px;
+}
+.btnGoogle iframe {
+
+left: 0pt; 
+top: 0pt; 
+width: 50px; 
+height: 15px; 
+visibility: visible;
+border:none;
+margin:0; 
+
+overflow: hidden;
+}
+
+.txtBuscaNoticias {
+	width: 110px;
+	height: 12px;
+	font-size: 11px;
+	color: #CB2026;
+	padding: 5px 0;
+	margin-left: 100px;
+	margin-right: 5px;
+}
+.inputTextBuscaNoticias {
+	width: 208px;
+	height: 22px;
+	font-size: 11px;
+	color: #808285;
+	margin: 0px 4px 2px 0px;
+	padding: 1px 0px 0px 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dbdada;
+}
+.btnBuscaNoticia {
+	background-image: url("http://carsale.uol.com.br/novosite/img/gridMidiasSociaisbtnBuscarNoticias.gif");
+	border:0;
+	width: 22px;
+	height: 20px;
+	text-indent: -99em;
+}
+.content {
+	margin: auto;
+	width: 990px;
+	overflow: hidden;
+	
+}
+.columnLeft {
+	display: none;
+}
+.columnMiddle {
+	float: left;
+	
+}
+.columnRight {
+	float: left;
+	position: relative;
+}
+.bannerBigHome {
+	float: left;
+	width: 844px;
+	height: 206px;
+	margin-bottom: 10px;
+}
+.contentMiddle {
+	float: left;
+	width: 690px;
+}
+.carrosselHome {
+	float: left;
+	width: 800px;
+	height: 400px;
+	border:1px solid #ccc;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.carrosselHome .carrosselImg {
+	margin: auto;
+	width: 100%;
+	height: 100% !important;
+}
+.carrosselHome ol {
+	margin: 75px 10px 0 0;
+	top: 0;
+	width: 135px;
+	right: 0;
+	left: auto;
+}
+.carrosselHome li.active img {
+	background-color: red;
+}
+.carrosselHome li, .carrosselHome li.active {
+	text-indent: 0;
+	width: 100%;
+	height: 65px;
+	margin: 10px 0 0 0;
+	border: none;
+	background-color: transparent;
+}
+.carrosselHome .carousel-caption {
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: inherit;
+	overflow: hidden;
+	height: 60px;
+	padding: 17px 0 0 0;
+}
+.carrosselHome .carousel-caption h3 {
+	position: absolute;
+	margin-left: 10px;
+	z-index: 1;
+	font-size: 26px;
+	text-align: left;
+	font-weight: bold;
+}
+.carrosselHome .carousel-caption p {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	margin-top: 25px;
+}
+.carrosselHome .img-thumbnail {
+	padding: 1px;
+	max-width: 135px;
+	max-height: 66px;
+}
+.carrosselHomeDown .carousel-caption {
+	top: 320px;
+}
+.carrosselHomeDown ol {
+	margin-top: 10px;
+}
+.carrosselHome .carousel-opacity {
+	position: absolute;
+	opacity: 0.5;
+	/*filter:alpha(opacity=50); /* For IE8 and earlier */
+	background-color: #000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.carrosselHome .carousel-inner {
+	height: 100%;
+}
+.carousel-inner a {
+	color: #000;
+}
+.carrosselHome .carousel-inner .item {
+	height: 100%;
+}
+.chamadaH1 {
+	float: left;
+	width: 300px;
+	margin: 0 5px 10px 0;
+	border-top: 1px dotted #ccc;
+	overflow: hidden;
+	background-color: #eee;
+}
+.chamadaH1:hover {
+	background-color: #ddd;
+}
+.chamadaH1 .foto {
+	max-width: 300px;
+	max-height: 300px;
+}
+.chamadaH1 h3 {
+	color: #000;
+	padding: 10px 10px 0;
+	margin: 0;
+	font-size: 25px;
+	font-weight: bold;
+}
+.chamadaH1 h4 {
+	color: #000;
+	padding: 10px;
+	margin: 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+.chamadaH2 {
+	float: left;
+	width: 320px;
+	padding: 10px;
+	border-top: 1px dotted #ccc;
+	overflow: hidden;
+	margin: 0 10px 25px 0;
+}
+.chamadaH2:hover {
+	background-color: #eee;
+}
+.chamadaH2 img{
+	float: left;
+	margin-right: 5px;
+}
+.chamadaH2 h3 {
+	float: left;
+	color: #8DA4A8;
+	font-size: 14px;
+	font-weight: bold;
+	width: 130px;
+}
+.chamadaH2 h4 {
+	float: left;
+	color: #CB2026;
+	font-size: 16px;
+	font-weight: bold;
+	width: 130px;
+}
+.chamadaM1 {
+	float: left;
+	margin:0 10px 10px 0;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	width: 265px;
+}
+.chamadaM1 h3 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #8DA4A8;
+	margin-bottom: 5px;
+}
+.chamadaM1 img {
+	margin-bottom: 10px;
+	width: 264px;
+	height: 160px;
+}
+.chamadaM1 h4 {
+	color: #CB2026;
+	font-size: 18px;
+	font-weight: bold;
+}
+.chamadaM2 {
+	float: left;
+	margin: 0 10px 10px 0;
+	width: 330px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+}
+.chamadaM2 h3 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #8DA4A8;
+	margin-bottom: 5px;
+}
+.chamadaM2 img {
+	float: left;
+	margin-right: 5px;
+	width: 144px;
+	height: 100px;
+}
+.chamadaM2 h4 {
+	float: left;
+	width: 160px;
+	color: #CB2026;
+	font-size: 14px;
+	font-weight: bold;
+}
+.ultNot {
+	float: left;
+	width: 440px;
+	border-top: 1px dotted #ccc;
+	padding-top: 10px;
+}
+.ultnotTitulo {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+.ultnotTituloSpan a {
+	font-size: 18px;
+	color: #8DA4A8;
+	font-weight: bold;
+}
+.ultnotTituloSpan {
+	float: left;
+	width: 200px;
+	margin-top: 2px;
+}
+.ultnotMaisNoticias {
+	float: right;
+	margin-right: 30px;
+	background-color: #eee;
+}
+.ultnotMaisNoticias a{
+	color: #8DA4A8;
+	display: block;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+.ultnotMaisNoticias:hover {
+	background-color: #ccc;
+}
+.ultnotMaisNoticias a:hover {
+	color:#CB2026;
+	text-decoration: none;
+}
+.ultNot ul {
+	float: left;
+}
+.ultNot li {
+	padding: 5px 0;
+	border-bottom: 1px solid #ddd;
+}
+.ultNot li a {
+	color: #CB2026;
+	font-size: 12px;
+	padding: 5px 10px;
+	display: block;
+}
+.chamadaFoto {
+	float: left;
+	padding: 10px 5px;
+}
+.chamadaFotoTopo {
+	float: right;
+}
+.contentRight {
+	float: right;
+	width: 300px;
+	position: relative;
+	z-index: 0;
+}
+.carrosselVideos {
+	float: left;
+	width: 675px;
+	padding-top: 10px;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.carrosselVideos:hover {
+	text-decoration: none;
+}
+.carrosselVideos h3.carrosselTitle {
+	font-size: 16px;
+	font-weight: bold;
+	color: #8DA4A8;
+	margin-bottom: 5px;
+}
+
+.carrosselVideos .carousel-caption {
+	padding: 0;
+	color: #CB2026;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.carrosselVideos .carousel-control {
+	height: 349px;
+	margin-top: 40px;
+}
+.carrosselVideos .carousel-control .icon-prev:before {
+	content: "";
+}
+.carrosselVideos .carousel-control .icon-prev {
+	background: url('http://noticias.carsale.uol.com.br/images/arrow-normal-left.png') center center transparent no-repeat;
+	display: block;
+	height: 85px;
+	width: 45px;
+	left: 15px;
+	top: 40%;
+}
+.carrosselVideos .carousel-control .icon-next:before {
+	content: "";
+}
+.carrosselVideos .carousel-control .icon-next {
+	background: url('http://noticias.carsale.uol.com.br/images/arrow-normal-right.png') center center transparent no-repeat;
+	display: block;
+	height: 85px;
+	width: 45px;
+	left: 70px;
+	top: 40%;
+}
+.carrosselVideos .carousel-indicators .active {
+	background-color: #fff;
+}
+.carrosselVideos .play-arrow {
+	/*background: url("http://noticias.carsale.uol.com.br/images/sprite.png") -269px -319px transparent no-repeat;*/
+	background: url("https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/128/youtube.png") center center transparent no-repeat;
+	width: 86px;
+	height: 63px;
+	position: absolute;
+	opacity: 0.7;
+	/*filter:alpha(opacity=70); /* For IE8 and earlier */
+	margin: 30px 110px;
+	top: 0;
+}
+.carrosselVideos .carrosselImg {
+	height: 360px;
+	width: 100%;
+	overflow: hidden;
+}
+.carrosselVideos .carrosselImg img {
+	width: 100%;
+}
+.carrosselVideosDown .carousel-caption {
+	height: 27px;
+	overflow: hidden;
+	color: #000;
+	text-align: left;
+	font-size: 20px !important;
+	margin-bottom: 10px;
+}
+.carrosselVideosDown .play-arrow {
+	margin: 180px 300px;
+}
+.chamadasUltnot {
+	width: 370px;
+	float: left;
+	margin: 0 5px 10px 0;
+}
+.chamadasUltnot h2 {
+	background-color: #CB2026;
+	padding: 5px 0 2px 0px;
+	margin-bottom: 10px;
+}
+.chamadasUltnot h2 span {
+	background-color: #CB2026;
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	padding: 2px 10px;
+}
+.chamadasUltnot .chamadaMiddle {
+	float: left;
+	padding: 10px;
+	width: 100%;
+}
+.chamadasUltnot .chamadaMiddle:hover {
+	background-color: #eee;
+}
+.chamadasUltnot .chamadaMiddle .foto {
+	float: left;
+	margin-right: 10px;
+	max-width: 180px;
+}
+.chamadasUltnot .chamadaMiddle .foto img {
+	max-width: 180px;
+	height: auto;
+}
+.chamadasUltnot .chamadaMiddle .fotoRight {
+	float: right;
+	margin-left: 10px;
+	max-width: 120px;
+}
+.chamadasUltnot .chamadaMiddle .span {
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+}
+.chamadasUltnot .ultnotData {
+	color: #888;
+	font-size: 11px;
+}
+.chamadasUltnot .read-more-link {
+	text-align: right;
+}
+.chamadasUltnot .read-more-link a {
+	color: #CB2026;
+}
+.enquetes {
+	width: 360px;
+	float: left;
+	position: relative;
+	margin: 0 10px 10px 0;
+}
+.enquetes .enqueteHeader {
+	background-color: #e0dede;
+	padding: 5px 0 10px;
+	overflow: hidden;
+}
+.enquetes .enqueteHeader span {
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding: 3px;
+	font-size: 22px;
+	background-color: #484242;
+	box-shadow: 0px 5px 8px #888888;
+
+}
+.enquetes .enqueteTitle {
+	background-color: #e0dede;
+	color: #3a3737;
+	padding: 0 5px 5px;
+	overflow: hidden;
+	font-size: 18px;
+}
+.enquetes .enqueteFigure {
+	position: relative;
+	margin: 20px 0 0 0;
+}
+.enquetes .enqFigure {
+	display: block;
+	position: relative;
+	width: 253px;
+	height: 155px;
+}
+.enquetes .enqCheckRight {
+	width: 30px;
+	height: 35px;
+	position: absolute;
+	right: 0;
+	top: -5px;
+	background: url("../images/checkBox-checked.png") 0px 0px transparent no-repeat;
+}
+.enquetes .enqueteImg {
+	float: left;
+}
+.enquetes .enqueteSubImg {
+	top: 40px;
+	right: 0px;
+	position: absolute;
+}
+.enquetes .enqueteForm {
+	margin: 40px 0 0 0;
+}
+.enquetes .chamadaMiddle:hover {
+	background-color: #eee;
+}
+.enquetes .chamadaMiddle {
+	padding: 10px 0 5px 0;
+	border-bottom: 2px solid #989695; 
+}
+.enquetes .chamadaMiddle.last {
+	border-bottom: none;
+}
+.enquetes .chamadaMiddle label {
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+.fieldsEnquete {
+	float: left;
+	overflow: hidden;
+	width: 215px;
+	font-size: 13px;
+	color: #9c1212;
+	padding: 20px 10px;
+}
+.enquetes .imgRight {
+	float: left !important;
+	max-width: 120px;
+}
+.enquetes .resultEnquete {
+	width: 230px;
+	position: absolute;
+}
+.enquetes .spanResultEnquete {
+	overflow: hidden;
+	width: 0px;
+}
+.enquetes .resultText {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.btnSubmitEnquete {
+	width: 117px;
+	border: 0;
+	margin: auto;
+	background: url("../images/btnVote.png") no-repeat;
+	display: block;
+	font-size: 14px;
+	height: 29px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.btnSubmitEnquete:hover {
+	color: #000;
+	background: url("../images/btnVoteHover.png") no-repeat;
+	padding-top: 3px;
+}
+.finalizada .btnSubmitEnquete {
+	background: #be1818;
+	width: 300px;
+	border: 3px solid #830606;
+}
+.enqClose {
+	cursor: pointer;
+	background-color: #9c1212;
+	position: absolute;
+	bottom: 223px;
+	right: 0px;
+	width: 25px;
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+}
+.enquetes .checked .inputStatus {
+	top: -5px;
+	background: url("../images/checkBox-checked.png") 0px 0px transparent no-repeat;
+}
+.enquetes .inputStatus {
+	width: 29px;
+	height: 35px;
+	top: 0px;
+	position: absolute;
+	background: url("../images/checkBox-empty.png") 0px 0px transparent no-repeat;
+}
+.enquetes .enqueteRadio {
+	display: none;
+}
+.enquetes.finalizada .fieldsEnquete{
+	position: absolute;
+	width: 215px !important;
+	left: 115px;
+	padding-top: 25px;
+}
+.modalCaptcha {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.modalCaptcha .enqueteContent {
+	text-align: center;
+	width: 315px;
+	margin:100px 20px;
+	position: absolute;
+	background-color: #424141;
+	bottom: 0;
+}
+.opacityWhite {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	opacity: 0.8;
+	background: #fff;
+	top: 0;
+}
+.modalCaptcha .enqueteContent h5 {
+	font-size: 20px;
+	color: #fff;
+	margin: 10px 0;
+	padding: 5px 0;
+	background-color: #3a3333;
+	border-bottom: 1px solid #706f6f;
+	border-top: 1px solid #adacac;
+}
+.captchaInput {
+	float: left;
+	margin: 15px 10px;
+	width: 140px;
+}
+.captchaCaptcha {
+	margin: 0 5px 0 0;
+}
+.banner-325x200 {
+	float: left;
+	width: 325px;
+	margin: 0 10px 10px 0;
+	position: relative;
+}
+.banner-665x176 {
+	float: left;
+	width: 665px;
+	margin: 0 10px 10px 0;
+}
+.doubleBanner .banner120x600 {
+	float: left;
+	margin: 0 15px;
+	margin-bottom: 10px;
+}
+.banner120x600 {
+	width: 120px;
+	height: 600px;
+	background-color: darkblue;
+}
+.fbSocialLike {
+	
+}
+footer {
+	width: 100%;
+	margin-top: 20px;
+	border-top: 1px solid #000;
+	background: linear-gradient(to bottom, #fff 1%,#eee 100%);
+	background: #fff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fff 1%, #eee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fff), color-stop(100%,#eee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fff 1%,#eee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fff 1%,#eee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fff 1%,#eee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fff 1%,#eee 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eee',GradientType=0 ); /* IE6-9 */
+}
+.footerTitle {
+	background: #c2232a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c2232a 1%, #a00e12 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#c2232a), color-stop(100%,#a00e12)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c2232a 1%,#a00e12 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c2232a 1%,#a00e12 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c2232a 1%,#a00e12 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c2232a 1%,#a00e12 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2232a', endColorstr='#a00e12',GradientType=0 ); /* IE6-9 */
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+.footerItemsTop {
+	text-align: center;
+}
+.footerItemsTop a {
+	margin: 10px;
+	color: #747474;
+	font-size: 11px;
+	font-weight: normal;
+}
+.footerItemsTop a:hover {
+	background-color: #ccc;
+}
+.footerMenu {
+	width: 600px;
+	overflow: hidden;
+	margin: auto;
+}
+.footerMenu ul {
+	float: left;
+	margin: 10px 30px;
+}
+.footerMenu li {
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+.footerMenu a {
+	color: #747474;
+}
+.footerMenu li.footerMenuTitle {
+	color: #CB2026;
+}
+.footerItemsTop {
+	border-bottom: 1px solid #ccc;
+	display: none;
+}
+footer .footerLogoBlog {
+	margin: 20px 0 30px 200px;
+	float: left;
+}
+footer .footerBlogImg {
+	background: url("http://carsale.uol.com.br/novosite/menu_2011/img/logoBlogCarsaleFooterHover_2.gif") no-repeat;
+	display: block;
+	width: 225px;
+	height: 50px;
+}
+footer .footerBlogImg:hover {
+	background:url("http://carsale.uol.com.br/novosite/menu_2011/img/logoBlogCarsaleFooter_2.gif") no-repeat;
+}
+footer .footerLogoCompra {
+	margin: 20px 200px 30px 0;
+	float: right;
+}
+footer .footerCompraImg {
+	background: url("http://carsale.uol.com.br/novosite/menu_2011/img/logoCarsaleCompraColetivaFooter.gif") no-repeat;
+	display: block;
+	width: 111px;
+	height: 50px;
+}
+footer .footerCompraImg:hover {
+	background: url("http://carsale.uol.com.br/novosite/menu_2011/img/logoCarsaleCompraColetivaFooterHover.gif") no-repeat;
+}
+.copyright {
+	width: 100%;
+	margin: auto;
+	background-color: #fff;
+	margin: 10px auto;
+	position: relative;
+	border-top: 1px solid #ccc;
+	overflow: hidden;
+	font-size: 12px;
+	color: #a7a9ac;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+.frameFb {
+	border:none; overflow:hidden; width:108px; height:20px; 
+}
+.frameTw {
+	width: 259px; height: 20px;
+}
+.bannerMegaOferta, .bannerMegaOfertaTopo {
+	width: 675px;
+	height: 165px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.bannerExploradorTopo, .bannerExplorador {
+	width: 180px;
+	height: 290px;
+	overflow: hidden;
+	float: right;
+}
+.bannerContent {
+	float: left;
+	margin-bottom: 10px;
+}
+.bannerCorretora {
+	position: absolute;
+	right: 0;
+}
+.doubleBannerContent {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	float: left;
+}
+.doubleBLeft {
+	float: left;
+	margin: 0 !important;
+}
+.doubleBRight {
+	float: right !important;
+}
+.banner-300x305 {
+	float: left;
+	width: 300px;
+	height: 305px;
+}
+.chamadaH1.blog {
+	width: 370px;
+	background-color: #eee;
+}
+.chamadaH1.blog h3 {
+	background: url("../images/blog-toy.png") 10px 3px transparent no-repeat;
+	padding:0 5px 0 90px;
+	height: 90px;
+}
+.chamadaH1.blog img {
+	max-width: 365px;
+	max-height: 215px;
+}
+/*
+HELPER
+-> ...
+text-overflow: ellipsis;
+white-space: nowrap;
+
+h1, nav, aside {
+transition: all .3s;
+-moz-transition: all .3s;
+-webkit-transition: all .3s;
+-o-transition: all .3s;
+}
+
+cor sim cor nao (listra)
+.resultData>ul>li:nth-child(odd)>a {
+	background-color: #eee;
+}
+
+*/

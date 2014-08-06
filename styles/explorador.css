@@ -1,0 +1,655 @@
+* {
+	font-family: verdana !important;
+}
+h1, nav, aside, .exploradorGridFiltrosChecks {
+transition: all .3s;
+-moz-transition: all .3s;
+-webkit-transition: all .3s;
+-o-transition: all .3s;
+}
+.contentMiddle {
+	width: auto;
+}
+.expTitle {
+	border-bottom: 1px solid;
+	padding: 0;
+	margin-bottom: 15px;
+	overflow: hidden;
+	position: relative;
+	height: 70px;
+}
+.expTitle b {
+	font-size: 35px;
+	color: #3c3e40;
+	float: left;
+	width: 100%;
+}
+.expTitle span {
+	font-size: 15px;
+	color: #3c3e40;
+	float: left;
+}
+.titleContent {
+	border-left: 5px solid #8b0000;
+	padding: 0 5px;
+	position: relative;
+	overflow: hidden;
+}
+.titleBar {
+	position: absolute;
+	width: 100%;
+	height: 15px;
+	background-color: #f1f1f1;
+	top: 16px;
+}
+.secExplore {
+	width: 385px;
+	margin: 50px 50px 0;
+	float: left;
+	border: 1px solid;
+	border-radius: 15px;
+	text-align: center;
+	overflow: hidden;
+}
+.secTitle {
+	color: #680e12;
+	font-size: 19px;
+	font-weight: normal;
+	text-align: left;
+	padding: 20px 10px 5px 20px;
+}
+.secSubTitle {
+	text-align: left;
+	font-size: 16px;
+	color: #7b7c7c;
+	padding: 0 10px 20px 20px;
+}
+.expHomeForm {
+	text-align: center;
+}
+.expInputSelect {
+	width: 210px;
+	height: 20px;
+	margin: 15px;
+	background-color: #e6e6e6;
+	border: 1px #c0c0c0 solid;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+}
+.btnExpSearch {
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 10px;
+}
+.btnPadding {
+	padding: 2px;
+	background-color: #fff;
+	border-radius: 5px;
+	width: 350px;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.btnExpSearch .btnButton {
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 3px 0 0 0;
+	display: block;
+	color: #fff;
+	background: rgb(217,217,217);
+	background: -moz-linear-gradient(top,  rgba(217,217,217,1) 0%, rgba(53,53,53,1) 58%, rgba(53,53,53,1) 99%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(217,217,217,1)), color-stop(58%,rgba(53,53,53,1)), color-stop(99%,rgba(53,53,53,1)));
+	background: -webkit-linear-gradient(top,  rgba(217,217,217,1) 0%,rgba(53,53,53,1) 58%,rgba(53,53,53,1) 99%);
+	background: -o-linear-gradient(top,  rgba(217,217,217,1) 0%,rgba(53,53,53,1) 58%,rgba(53,53,53,1) 99%);
+	background: -ms-linear-gradient(top,  rgba(217,217,217,1) 0%,rgba(53,53,53,1) 58%,rgba(53,53,53,1) 99%);
+	background: linear-gradient(to bottom,  rgba(217,217,217,1) 0%,rgba(53,53,53,1) 58%,rgba(53,53,53,1) 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#353535',GradientType=0 );
+}
+.btnExpSearch .btnButton:hover {
+	color: #323232;
+	background: #8a8a8a; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e1e1e1 0%, #8a8a8a 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e1e1), color-stop(50%,#8a8a8a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e1e1e1 0%,#8a8a8a 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e1e1e1 0%,#8a8a8a 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e1e1e1 0%,#8a8a8a 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e1e1e1 0%,#8a8a8a 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#8a8a8a',GradientType=0 ); /* IE6-9 */
+}
+.exploradorTitulo {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 4px;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+	text-align: left;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	height: auto;
+}
+.exploradorBgInterno {
+	height: auto;
+	margin:0;
+	width: 100%;
+	background-color: #fff;
+	float: left;
+	position: relative;
+	/*border: 1px #bcbec0 solid; */
+}
+.formExplorer {
+	background-color: #e6e6e6;
+	overflow: hidden;
+}
+.exploradorGridFiltros {
+	/*margin-bottom: 100px;*/
+	height: 265px;
+	width: 100%;
+	border:none;
+	border-bottom: 1px solid #ccc;
+}
+.exploradorGridFiltrosColunaB, .exploradorGridFiltrosColunaA {
+	float: left;
+}
+.exploradorGridFiltrosColunaA {
+	width: 399px;
+	height: 265px;
+	border-left: 1px solid #ccc;
+	padding: 0 0 0 7px;
+}
+.exploradorGridFiltrosColunaB {
+	width: 589px;
+}
+.thumbExpForm {
+	width: 100%;
+	border:1px solid transparent;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 12px;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	/*background: url("http://carsale.uol.com.br/classificado/img/btnFiltroCategoriaEntrada.gif") 0 0 transparent no-repeat;*/
+}
+.thumbExpForm:hover{
+	border-color: #ccc;
+	/*background: url("http://carsale.uol.com.br/classificado/img/btnFiltroCategoriaEntradaHover.gif") 0 0 transparent no-repeat;*/
+}
+.thumbExpForm span {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+}
+.filterChecked .thumbExpForm{
+	border-color: red !important;
+}
+.filterChecked .thumbExpForm:hover{
+	border-color: red !important;
+}
+.exploradorGridFiltrosGridImg {
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 0;
+}
+.exploradorGridFiltrosImg {
+	float: left;
+	margin: 0 5px 10px 0;
+	width: 110px;
+}
+.inputExpForm {
+	display: none;
+}
+.exploradorGridFiltrosColunaBTitulo {
+	padding: 5px;
+	font-size: 19px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	height: auto;
+	background-color: #515151;
+}
+.exploradorGridFiltrosColunaATitulo {
+	padding: 5px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #515151;
+	font-weight: bold;
+	text-align: center;
+	height: auto;
+	width: 100%;
+	cursor: pointer;
+}
+.exploradorGridFiltrosChecks {
+	height: 210px;
+	overflow-y: scroll;
+	padding: 10px 0 0 0px;
+	width: 100%;
+	bottom: 0;
+}
+.exploradorGridFiltrosChecks.check {
+	background-color: #ccc;
+	height: 0;
+}
+
+.exploradorGridFiltrosChecks label {
+	width: 165px;
+	font-size: 14px;
+	font-weight: normal;
+	padding-top: 3px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #2d2e2f;
+}
+.exploradorGridFiltrosChecks a {
+	color: #2d2e2f;
+	font-size: 14px;
+	font-weight: normal;
+}
+.exploradorGridFiltrosChecks input[type="checkbox"], .exploradorGridFiltrosChecks input[type="radio"] {
+	vertical-align: top;
+}
+.exploradorGridFiltrosChecks li:first-child input[type="checkbox"] {
+	margin-right: 5px;
+}
+.gridFiltrosChecks li:first-child input[type="checkbox"] {
+	margin-right: 0;
+}
+.gridFiltrosChecks {
+	box-shadow: 0px 5px 25px -6px #000;
+	padding: 10px;
+}
+.gridFiltrosChecks.check {
+	padding: 0 10px;
+	box-shadow: 0px 3px 8px 1px #000;
+}
+.exploradorGridFiltrosChecks li {
+	float: left;
+	margin: 0;
+	width: 185px;
+}
+.exploradorGridFiltrosInputTextLine {
+	overflow: hidden;
+	margin-bottom: 10px;
+	float: left;
+	width: 180px;
+}
+.exploradorGridFiltrosInputTextLine label {
+	width: 30px;
+	float: left;
+	margin-right: 10px;
+	font-size: 15px;
+	padding-top: 4px;
+}
+.exploradorGridFiltrosInputTextLine input {
+	float: left;
+	width: 135px;
+}
+.exploradorGridFiltrosInputText {
+	padding: 30px 10px 10px;
+	height: auto;
+	width: 100%;
+	border-bottom: 1px solid #bcbec0;
+	margin-bottom: 10px;
+}
+
+.bannerExplorer {
+	width: 100%;
+	height: 100px;
+	margin: 0px 0 20px;
+}
+/* lista com os carros para comparacao */
+.sContent {
+	background-color: #eee;
+	overflow: hidden;
+	position: relative;
+}
+.ulCarList {
+	overflow: scroll;
+	height: 400px;
+	width: 100%;
+	float: left;
+	background-color: #fff;
+}
+.liCarItem {
+	width: 170px;
+	height: 110px;
+	border: 2px solid #fff;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	margin: 10px;
+	text-align: center;
+	font-size: 13px;
+	border-radius: 10px;
+}
+.liCarItem.selectCar {
+	border-color: #790000;
+}
+.liCarItem label {
+	font-size: 10px;
+}
+.liCarItem:hover {
+
+	border-color: #790000;
+}
+.liCarItem.selected {
+	background-color: #999;
+}
+.btnMore {
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+}
+.btnSearchMore {
+	width: 100px;
+	margin: auto;
+	padding: 10px 0;
+}
+.bannerExplorer.affix{
+	top: 40px;
+	width: 990px;
+	margin: auto;
+}
+.imgCarSelect {
+	max-width: 140px;
+	max-height: 80px;
+	margin-top: 5px;
+}
+
+.column {
+	float: left;
+	border: 1px solid #fff;
+	width: 193px;
+}
+.headerTitle {
+	height: 42px;
+	padding: 12px 0 0 10px;
+	font-size: 18px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #67707f;
+	font-weight: bold;
+}
+.titleItems>li:nth-child(odd) {
+	background-color: #eee;
+}
+.titleItems>li {
+	font-size: 12px;
+	font-weight: bold;
+	height: 40px;
+	overflow: hidden;
+	padding: 3px 10px;
+}
+.descItems>li:nth-child(odd) {
+	background-color: #eee;
+}
+.descItems>li {
+	background-color: #fff;
+	overflow: hidden;
+	text-align: center;
+	padding: 5px 0;
+	height: 40px;
+	font-size: 11px;
+}
+.exploradorGridFiltrosBtnBuscar {
+	height: auto;
+	width: 100%;
+}
+.btnExploradorFilter{
+	margin: 10px;
+	background: #8c0000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f9b5b5 0%, #8c0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9b5b5), color-stop(100%,#8c0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f9b5b5 0%,#8c0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f9b5b5 0%,#8c0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f9b5b5 0%,#8c0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f9b5b5 0%,#8c0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b5b5', endColorstr='#8c0000',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	font-weight: normal;
+	font-size: 16px;
+	border-radius: 10px;
+	width: 135px;
+	float: right;
+}
+.resultFilter {
+	overflow: scroll;
+	display: block;
+	width: 100%;
+	height: 300px;
+	float: left;
+}
+.liFilterItem.yes {
+	/*background: url('../images/exploradorCheck.gif') center center transparent no-repeat;*/
+	text-indent: -99em;
+}
+
+.excluirComparacao {  width:18px; height:18px; text-align:center; padding-top:0px; margin-top:-4px; background-color:#e6e6e6; color:#000; font-size:12px; text-align:center; text-decoration:none; font-weight:bold; float:right; position:relative;cursor: pointer; z-index: 3; }
+.excluirComparacao:hover { background: #838383 center center; text-decoration:none; font-weight:bold; color:#fff;}
+.optList {
+	height: auto !important;
+}
+.exploradorTabelaCarroFechar  { margin:0px; padding:0px; }
+.exploradorTabelaCarroNumeracao { 
+	padding: 8px 20px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	background: url('../images/explorerItemNumber.jpg') center 0 no-repeat;
+	text-decoration: none;
+	position: relative;
+}
+.exploradorTabelaCarroImg { width:100%; height:70px; position:relative; float:left; text-align: center;}
+.exploradorTabelaCarroImg img {
+	max-width: 120px;
+}
+.exploradorTabelaCarroModelo { width:194px; height:40px; overflow: hidden;  padding-top:4px; font-size:12px; font-weight:bold; text-align:center; text-decoration:none; position:relative; float:left; }
+.exploradorTabelaCarroValor { width:194px; height:23px; padding-top:5px; font-size:12px; color: #b20a09; font-weight:bold; text-align:center; text-decoration:none; position:relative; float:left; }
+.exploradorOptVersion {
+	float: left; text-align: center; width: 100%; font-size: 11px; padding: 0 5px;
+}
+#optVersion {
+	max-width: 100%;
+}
+.exploradorTabela {
+	overflow: hidden;
+}
+.exploradorTabelaLineCarros {
+	width: 100%;
+	border:none;
+}
+
+
+
+
+.dealerFichaTecnicaImg {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.dealerFichaTecnicaTituloDesc, .dealerFichaTecnicaDescClaroLine, .dealerFichaTecnicaDescEscuroLine, .dealerFichaTecnicaTitulo {
+    height: auto;
+    min-height: 25px;
+}
+.dealerFichaTecnicaBgInterno {
+    width: 100%;
+    overflow: hidden;
+}
+.modal-body {
+    overflow: hidden;
+}
+.modalFeatureOptions, .modalFeatureColors {
+	display: none;
+}
+.descriptionItem {
+    float: left;
+    width: 100%;
+}
+.descItemSerie {
+    font-size: 11px;
+    padding: 5px;
+}
+.descriptionItem>div:nth-child(odd) {
+    background-color: #ccc;
+}
+.exploradorTabelaBtnFicha {
+	cursor: pointer;
+	padding: 0px 0px 0px 15px;
+	text-align: left;
+	overflow: hidden;
+	height: 25px;
+}
+.exploradorTabelaGridBase.veiculo {
+	padding-top: 15px;
+}
+.arrow-explorer-form-more {
+	background: url("http://noticias.carsale.uol.com.br/images/sprite.png") no-repeat transparent -337px -226px;
+	width: 15px;
+	height: 18px;
+	float: left;
+}
+.arrow-explorer-yes {
+	background: url("http://noticias.carsale.uol.com.br/images/sprite.png") no-repeat transparent -305px -222px;
+	width: 25px;
+	height: 32px;
+	margin: auto;
+}
+.arrow-explorer-news {
+	background: url("http://noticias.carsale.uol.com.br/images/sprite.png") no-repeat transparent -206px -225px;
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+.arrow-explorer-feature{
+	background: url("http://noticias.carsale.uol.com.br/images/sprite.png") no-repeat transparent -179px -225px;
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+.divColor {
+	position: relative;
+	width: 100%;
+	height: 36px;
+	background: url(../admin/images/colorpicker/select.png) no-repeat;
+	padding: 0 0 0 40px;
+}
+.divColor div {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 30px;
+	height: 30px;
+	
+}
+
+.selectCar .selectedNumber {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	right: 0;
+	border-radius: 20px;
+	padding: 2px;
+	color: #fff;
+}
+.exploradorTabelaGridCarro {
+	background-color: #fff;
+}
+.backGroundRepeat {
+	position: absolute;
+	margin-left: 194px;
+}
+.backGroundRepeat .exploradorTabelaCarroImg {
+	margin-top: 40px;
+}
+.colorItems > div {
+float: left;
+width: 178px;
+}
+.loadingUlCarList {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 10;
+	opacity: .5;
+}
+.loadingText {
+	background-color: #fff;
+	text-align: center;
+	top: 70px;
+	margin: 50px 250px;
+	opacity: 1;
+	padding: 30px;
+	position: absolute;
+	z-index: 11;
+	width: 500px;
+	border-radius: 20px;
+}
+.loagingImg {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+}
+.removeLoadingCarList {
+	width: 17px;
+	height: 18px;
+	background: url("http://noticias.carsale.uol.com.br/images/sprite.png") no-repeat transparent -241px -230px;
+	position: absolute;
+	top: 0;
+	text-indent: -99em;
+	right: 0;
+	cursor: pointer;
+	color: red;
+}
+/*THUMBS SEARCH FORM */
+.car1 {
+	background: url('../images/explorador-thumbs/hatch.jpg') 14px 15px no-repeat
+}
+.car2 {
+	background: url('../images/explorador-thumbs/sedan.jpg') 6px 15px no-repeat
+}
+.car3 {
+	background: url('../images/explorador-thumbs/carro-de-entrada.jpg') 15px 15px no-repeat
+}
+.car4 {
+	background: url('../images/explorador-thumbs/aventureiro.jpg') 10px 15px no-repeat
+}
+.car5 {
+	background: url('../images/explorador-thumbs/conversivel.jpg') 7px 15px no-repeat
+}
+.car6 {
+	background: url('../images/explorador-thumbs/minivan.jpg') 18px 15px no-repeat
+}
+.car7 {
+	background: url('../images/explorador-thumbs/perua-stationwagon.jpg') 7px 15px no-repeat
+}
+.car8 {
+	background: url('../images/explorador-thumbs/picape.jpg') 5px 15px no-repeat
+}
+.car9 {
+	background: url('../images/explorador-thumbs/utilitario-comercial.jpg') 5px 15px no-repeat
+}
+.car10 {
+	background: url('../images/explorador-thumbs/suv.jpg') 6px 15px no-repeat
+}
+
+
+
+
+
+
